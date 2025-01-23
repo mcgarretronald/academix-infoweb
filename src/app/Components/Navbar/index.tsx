@@ -9,7 +9,7 @@ export default function Navbar() {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <nav className="w-full py-5 lg:px-10  px-5 bg-transparent fixed top-0 left-0 z-50">
+        <nav className="w-full py-5 lg:px-10  px-5  fixed top-0 left-0 z-50 navbar">
             <div className="flex items-center justify-between">
                 {/* Logo */}
                 <div className="cursor-pointer">
@@ -55,16 +55,16 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             <div
-                className={`lg:hidden absolute top-0 left-0 w-full bg-background text-black transition-transform duration-300 transform ${isOpen ? "translate-x-0" : "-translate-x-full"
+                className={`lg:hidden absolute top-0 left-0 w-full bg-[#1D2C4E] text-white transition-transform duration-300 transform ${isOpen ? "translate-x-0" : "-translate-x-full"
                     }`}
             >
                 <div className="flex flex-col items-center py-6">
                     <Link
-                        href="/"
+                        href="#features"
                         className="py-2 hover:text-[#29467F] transition duration-300"
                         onClick={toggleMenu}
                     >
-                        Home
+                        Features
                     </Link>
                     <Link
                         href="/about"
