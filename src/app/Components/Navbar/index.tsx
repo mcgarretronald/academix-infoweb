@@ -67,7 +67,7 @@ export default function Navbar() {
                         Features
                     </Link>
                     <Link
-                        href="/about"
+                        href="#about"
                         className="py-2 hover:text-[#29467F] transition duration-300"
                         onClick={toggleMenu}
                     >

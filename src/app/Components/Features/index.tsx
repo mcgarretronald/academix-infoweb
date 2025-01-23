@@ -36,7 +36,7 @@ const data = [
 
 export default function Features() {
     return (
-        <div id="features" className='h-screen pt-[5%] ' >
+        <div id="features" className='pt-[5%] ' >
             <h1 className='text-4xl font-poppins font-semibold mt-5 text-center'>Features</h1>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3 p-10">
             {data.map((item) => (
@@ -51,12 +51,11 @@ export default function Features() {
                             className="rounded-lg"
                         />
                         {/* Feature Title */}
-                        <h2 className="mt-4 text-xl font-poppins font-semibold text-center">{item.title}</h2>
+                        <h2 className="mt-4 text-xl font-poppins text-center">{item.title}</h2>
                     </div>
                 </div>
             ))}
             </div>
-         
         </div>
     )
 }
