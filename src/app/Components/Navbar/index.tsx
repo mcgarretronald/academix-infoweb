@@ -39,7 +39,7 @@ export default function Navbar() {
                         About
                     </Link>
                     <Link
-                        href="/#contact"
+                        href="#contact"
                         className="hover:text-[#29467F] transition duration-300"
                     >
                         Contact
@@ -74,18 +74,18 @@ export default function Navbar() {
                         About
                     </Link>
                     <Link
-                        href="/services"
-                        className="py-2 hover:text-[#29467F] transition duration-300"
-                        onClick={toggleMenu}
-                    >
-                        Services
-                    </Link>
-                    <Link
-                        href="/contact"
+                        href="#contact"
                         className="py-2 hover:text-[#29467F] transition duration-300"
                         onClick={toggleMenu}
                     >
                         Contact
+                    </Link>
+                    <Link
+                        href="/#signin"
+                        className="py-2 hover:text-[#29467F] transition duration-300"
+                        onClick={toggleMenu}
+                    >
+                        <button className="text-white bg-buttonbg rounded-lg py-2 px-6 hover:bg-[#3978D7] transition duration-300">Sign In</button>
                     </Link>
                 </div>
             </div>
